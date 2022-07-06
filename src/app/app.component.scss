@@ -1,0 +1,9 @@
+:host {
+  height: 100%;
+  display: grid;
+  grid-template: 50px max-content 1fr / 1fr max-content 1fr;
+
+  > app-form {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+}

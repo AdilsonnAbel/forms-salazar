@@ -1,0 +1,27 @@
+$shadow: hsl(210, 30%, 24%);
+
+:host {
+  display: grid;
+  grid-template: 20px max-content 20px / 20px 300px 20px;
+  box-shadow: $shadow 0px -15px 15px -15px, $shadow 0px 15px 15px -15px;
+  border-radius: 10px;
+  background-color: hsl(262, 39%, 90%);
+
+  // color: hsl(262, 52%, 47%);
+  // background-color: hsl(262, 43%, 83%);
+  // color: hsl(262, 52%, 47%);
+
+  > form {
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+
+    > h1 {
+      margin: 0;
+    }
+
+    > div {
+      padding-top: 10px;
+      // justify-self: start;
+    }
+  }
+}
